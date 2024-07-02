@@ -8,6 +8,8 @@ Note: The rotating images and illustrations on the site are not up-to-date and a
 ## Webpages
 
 ### Store page
+![Store]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/Screenshot/1.png
+![Store]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/Screenshot/2.png
 * [Index page html file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/index.html
 * [Index page css file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/index.css
 
