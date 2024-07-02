@@ -1,0 +1,230 @@
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>
+				Sign in
+			</title>
+			<!-- 导入网页logo -->
+			<link rel="icon" href="./img/主页/favicon.ico">
+			<!-- 导入清除全局样式 -->
+			<link rel="stylesheet" href="css/reset.css">
+			<!-- 导入本项目css文件 -->
+			<link rel="stylesheet" href="css/logincss.css">
+		</head>
+		<body>
+					<!-- Head 页首  导航栏 -->
+				<div class="header">
+				<div class="content">
+				<div class="logo">
+					<a href="#">
+						<img src="src/biaoti.png" width="176" height="44">
+					</a>
+				</div>
+				<!-- 菜单栏 -->
+				<div class="supernav_container">
+					<div class="con">
+						<a class="menuitem shop " href="css/index.html"><span>Store</span></a>
+						<div class="xl">
+							<div class="submenu_content">
+								<a class="submenuitem" href="css/index.html">Home</a>
+								<a class="submenuitem" href="#">Discovery Queue</a>
+								<a class="submenuitem" href="#">WishList</a>
+								<a class="submenuitem" href="#">Points Shop</a>
+								<a class="submenuitem" href="#">News</a>
+								<a class="submenuitem" href="#">Stats</a>
+							</div>
+						</div>
+					</div>
+					<div class="cons">
+						<a class="menuitem community " href="css/community.html">Community</a>
+						<div class="xl2">
+							<div class="submenu_content">
+								<a class="submenuitem" href="css/index.html">Home</a>
+								<a class="submenuitem" href="#">Discussion</a>
+								<a class="submenuitem" href="#">Workshop</a>
+								<a class="submenuitem" href="#">Market</a>
+								<a class="submenuitem" href="#">Broadcast</a>
+							</div>
+						</div>
+					</div>
+					
+					<a class="menuitem supernav" href="#">About</a>
+					<a class="menuitem supernav" href="support.html">Support</a>
+					<!-- 菜单栏下拉框 -->		
+				</div>
+				<div class="actions">
+					<div class="action_menu">
+						<div class="header_installsteam_btn header_installsteam_btn_green">
+							<a class="header_installsteam_btn_content" href="关于/steam.html">Install Steam</a>
+						</div>
+						<a class="action_link" href="#">login</a>
+						&nbsp;|&nbsp;
+						<div class="pulldowns" onclick="show()">
+							<span class="pulldown action_link" id="language_pulldown">language</span>
+						<div class="popup_block_new" id="language_dropdown">
+							<div class="popup_body popup_menu">
+								<a class="popup_menu_item tight" href="#" >简体中文(Simplified Chinese)</a>
+								<a class="popup_menu_item tight" href="#" >繁體中文(Traditional Chinese)</a>
+								<a class="popup_menu_item tight" href="#" >日本語(Japanese)</a>
+								<a class="popup_menu_item tight" href="#" >한국어(Korean)</a>
+								<a class="popup_menu_item tight" href="#" >ไทย(Thai)</a>
+								<a class="popup_menu_item tight" href="#" >български(Bulgarian)</a>
+								<a class="popup_menu_item tight" href="#" >Čeština(Czech)</a>
+								<a class="popup_menu_item tight" href="#" >Dansk(Danish)</a>
+								<a class="popup_menu_item tight" href="#" >Deutsch(German)</a>
+								<a class="popup_menu_item tight" href="#" >English(English)</a>
+								<a class="popup_menu_item tight" href="#" >Español-España(Spanish-Spain)</a>
+								<a class="popup_menu_item tight" href="#" >Español - Latinoamérica(Spanish-Latin America)</a>
+								<a class="popup_menu_item tight" href="#" >Ελληνικά(Greek)</a>
+								<a class="popup_menu_item tight" href="#" >Français(French)</a>
+								<a class="popup_menu_item tight" href="#" >Italiano(Italian)</a>
+								<a class="popup_menu_item tight" href="#" >Magyar(Hungarian)</a>
+								<a class="popup_menu_item tight" href="#" >Nederlands(Dutch)</a>
+								<a class="popup_menu_item tight" href="#" >Norsk(Norwegian)</a>
+								<a class="popup_menu_item tight" href="#" >Polski(Polish)</a>
+								<a class="popup_menu_item tight" href="#" >Português(Portuguese)</a>
+								<a class="popup_menu_item tight" href="#" >Português-Brasil(Portuguese-Brazil)</a>
+								<a class="popup_menu_item tight" href="#" >return false;">Română(Romanian)</a>
+								<a class="popup_menu_item tight" href="#" >Русский(Russian)</a>
+								<a class="popup_menu_item tight" href="#" >Suomi(Finnish)</a>
+								<a class="popup_menu_item tight" href="#" >Svenska(Swedish)</a>
+								<a class="popup_menu_item tight" href="#" >Türkçe(Turkish)</a>
+								<a class="popup_menu_item tight" href="#" >Tiếng Việt(Vietnamese)</a>
+								<a class="popup_menu_item tight" href="#" >Українська(Ukrainian)</a>
+								<a class="popup_menu_item tight" href="#" >Report a translation problem</a>
+								</div>
+							</div>
+							</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				
+				
+		           <!-- login整体框 -->
+				<div class="responsive_page_template_content">
+					<!-- 底部图片 -->
+						<img src="src/acctt_creation_bg.png" alt="">
+						
+						<div class="page_content_flex">
+							<!-- 左侧 -->
+							<div class="login_left_col ">
+							
+								<div class="loginbox login_col_padding">
+									<div class="loginbox_content">
+										<!-- 登录 -->
+										<div class="login_title">Sign in</div>
+										<!-- 登录账号密码框 -->
+										<form >
+											<div></div>
+											<!-- 无用框 -->
+											<div class="login_titlee"></div>
+											<!-- 账号框 -->
+											<div class="login_titlee">
+												<div class="input_title">SIGN IN WITH ACCOUNT NAME</div>
+												<input type="text">
+											</div>
+											<!-- 密码框 -->
+											<div class="login_titleee">
+												<div class="input_title">PASSWORD</div>
+												<input type="text">
+											</div>
+										</form>
+										<!-- 登录按钮 -->
+										<div class="login_btn_ctn">
+											<div class="login_btn_signin">
+												<!-- 登录按钮！ -->
+												<button>
+													<span>Sign in</span>
+												</button>
+												<a href="#">Help, I can't sign in</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<!-- 右侧 -->
+							<div class="login_right_col login_col_paddingg">
+								<div class="login_join_desc subtext">Discover thousands of games to play with millions of new friends.</div>
+								<a href="#" class="login_join_desc about_link">Learn more about Steam</a>
+								<img src="src/join_pc.png" alt="" style="width: 320ppx; height: 218;">
+								<div class="login_btn_ctnn">
+									<div class="subtextt">&nbsp&nbsp&nbsp&nbsp It's free and easy.</div>
+									<a href="#" class="btnv6_white_transparent btn_medium">
+										<span>Join Steam</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Foot 页脚 -->
+							<!-- Footer -->
+						<div id="footer_spacer" style="" class="">
+						
+						<div id="footer"  class="">
+							<div class="footer_content">
+						    <div class="rule"></div>
+										<div id="footer_logo_steam"><img src="./img/关于/logo_steam_footer.png" alt="Valve Software" border="0" /></div>
+							
+										<div id="footer_logo"><a href="#" target="_blank" rel="noreferrer"><img src="./img/关于/footerLogo_valve_new.png" alt="Valve Software" border="0" /></a></div>
+										<div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+											<div>© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.</div>
+													<div>VAT included in all prices where applicable. &nbsp;&nbsp;
+														<a href="#" target="_blank" rel="noreferrer">Privacy Policy</a>
+														&nbsp; | &nbsp;
+														<a href="#" target="_blank" rel="noreferrer">Legal</a>
+														&nbsp; | &nbsp;
+														<a href="#" target="_blank" rel="noreferrer">Steam Subscriber Agreement</a>
+														&nbsp; | &nbsp;
+														<a href="#" target="_blank" rel="noreferrer">Refunds</a>
+														&nbsp; | &nbsp;
+														<a href="#" target="_blank" rel="noreferrer">Cookies</a>
+													</div>
+										<!-- 	<div class="responsive_optin_link">
+										<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+										</div>
+									</div> -->
+								
+						    </div>
+						    <div style="clear: left;"></div>
+							<br>
+						    <div class="rule"></div>
+						    <div class="valve_links" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+								<a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
+								&nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
+								&nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank"
+									rel="noreferrer">Steamworks</a>
+								&nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank"
+									rel="noreferrer">Steam Distribution</a>
+								&nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">Support</a>
+								&nbsp; | &nbsp;<a href="http://steam.lli5.cn/digitalgiftcards/?snr=1_44_44_" target="_blank"
+									rel="noreferrer">Gift Cards</a>
+								&nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam"
+									target="_blank" rel="noopener"><img
+										src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+								&nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer"><img
+										src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+							</div>
+						</div>
+							</div>
+							</div>
+
+		<script>
+		/* 语言下拉框固定悬浮 */
+			var state=true;
+			function show(){
+				if(state==true){
+					document.getElementById("language_dropdown").style.display="block";
+					state=!state;
+				}else if(state==false){
+					document.getElementById("language_dropdown").style.display="none";
+					state=!state;
+				}
+			}
+		</script>	
+			
+		
+		</body>
+</html
