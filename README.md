@@ -1,7 +1,7 @@
 # Steam_Store_Project
 
 ## Introduction
-This is a website that emulates the steam gaming platform store. 
+This is a website written in massive html and css, supplemented by Javascript, and also utilizes libraries including JQuery and bootstrap that emulates the steam gaming platform store. 
 Note: The rotating images and illustrations on the site are not up-to-date and are only intended to enrich the content of the website. 
 
 ## Webpages
@@ -11,8 +11,8 @@ Note: The rotating images and illustrations on the site are not up-to-date and a
 * [Index page css file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/index.css
 
 ### Community page
-* [community page html file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/community.html
-* [community page css file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/community.css
+* [community page html]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/community.html
+* [community page css]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/community.css
 
 ### Support page
 * [Support page html file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/support.html
@@ -25,4 +25,5 @@ Note: The rotating images and illustrations on the site are not up-to-date and a
 ### Gift Card page
 * [Gift card page html file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/数字礼物卡.html
 * [Gift card page css file]https://github.com/Jiaha0-Zhang/Steam_Store_Project/blob/main/css/数字礼物卡.css
+
 
