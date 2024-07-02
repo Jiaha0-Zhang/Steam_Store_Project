@@ -1,8 +1,9 @@
 # Steam_Store_Project
 
 ## Introduction
-This is a website written in massive html and css, supplemented by Javascript, and also utilizes libraries including JQuery and bootstrap that emulates the steam gaming platform store. 
-Note: The rotating images and illustrations on the site are not up-to-date and are only intended to enrich the content of the website. 
+This is a website written in massive HTML and CSS, supplemented by JavaScript, and also utilizes libraries including JQuery and Bootstrap that emulate the Steam gaming platform store. 
+
+Note: The rotating images and illustrations on the site are not up-to-date and are only intended to enrich the content of the website.
 
 ## Webpages
 
