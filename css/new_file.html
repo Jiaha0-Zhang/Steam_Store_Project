@@ -1,0 +1,228 @@
+  .ContentOne .storeNav {
+            position: absolute;
+            top: 24px;
+            left: 290px;
+            height: 35px;
+            width: 940px;
+            margin: 7px 0 7px 0;
+            /* border: 1px solid white; */
+            background-image: linear-gradient(to right, #3B6490, #2B4B84, #0F216E);
+            z-index: 5;
+        }
+ 
+        .ContentOne .storeNav ul {
+            text-align: center;
+            vertical-align: center;
+        }
+ 
+        .ContentOne .storeNav ul li {
+            float: left;
+            /* background-color: #fff; */
+            list-style: none;
+            height: 35px;
+            line-height: 35px;
+            width: 56px;
+            padding: 0 5px 0 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 13px;
+            text-shadow: 0px 2px 3px rgb(0 0 0 / 30%);
+            color: #d9d9d9;
+            /* padding-top: 10px; */
+        }
+ 
+        .ContentOne .storeNav .store {
+            display: inline;
+            width: 76px;
+            height: 35px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .ContentOne .storeNav .new {
+            display: inline;
+            width: 103px;
+            height: 35px;
+            position: absolute;
+            top: 0;
+            left: 77px;
+        }
+        .ContentOne .storeNav .kind{
+            display: inline;
+            width: 77px;
+            height: 35px;
+            position: absolute;
+            top: 0;
+            left: 180px;
+        }
+        .ContentOne .storeNav .store:hover~.secondOne {
+            display: flex;
+        }
+        .ContentOne .storeNav .secondOne:hover{
+            display: flex;
+        }
+        .ContentOne .storeNav .store:hover~ul>.yourStore {
+            cursor: pointer;
+            background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
+        }
+        .ContentOne .storeNav .new:hover~.secondTwo {
+            display: flex;
+        }
+        .ContentOne .storeNav .secondTwo:hover{
+            display: flex;
+        }
+        .ContentOne .storeNav .new:hover~ul>.news {
+            cursor: pointer;
+            background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
+        }
+        .ContentOne .storeNav .kind:hover~.secondThree {
+            display: flex;
+        }
+        .ContentOne .storeNav .secondThree:hover{
+            display: flex; 
+        }
+        .ContentOne .storeNav ul li:nth-child(2) {
+            width: 86px;
+            padding: 0 6px 0 11px;
+        }
+ 
+        .ContentOne .storeNav ul li:nth-child(3) {
+            width: 56px;
+            padding: 0 6px 0 15px;
+        }
+ 
+        .ContentOne .storeNav ul li img {
+            float: left;
+            width: 26px;
+            height: 26px;
+            margin-right: -10px;
+        }
+ 
+        .ContentOne .storeNav ul li:not(.emptyNav, .search):hover {
+            cursor: pointer;
+            background-image: linear-gradient(to right, #3180BF, rgba(55, 106, 156, 0.5));
+        }
+ 
+        .ContentOne .storeNav ul .emptyNav {
+            width: 210px;
+        }
+ 
+        .ContentOne .storeNav ul .search {
+            width: 205px;
+            height: 35px;
+            margin-left: 20px;
+            padding: 0;
+        }
+ 
+        .ContentOne .storeNav ul li .searchFor {
+            background-color: #316282;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            box-shadow: 1px 1px 0px rgb(255 255 255 / 20%);
+            height: 25px;
+            box-sizing: border-box;
+            margin-right: 0;
+            margin-top: 5px;
+            position: relative;
+        }
+ 
+        .ContentOne .storeNav ul li .searchFor:hover {
+            border: 1px solid blue;
+        }
+ 
+        .ContentOne .storeNav ul li input {
+            height: 27px;
+            width: calc(100% - 25px - 8px);
+            color: #081116;
+            font-size: 14px;
+            text-shadow: 1px 1px 0px rgb(255 255 255 / 10%);
+            font-family: "Motiva Sans", Sans-serif;
+            font-weight: 300;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            left: 0;
+            font-style: italic;
+            margin-left: 8px
+        }
+ 
+        .ContentOne .storeNav ul li .searchFor img {
+            width: 23px;
+            height: 23px;
+            position: absolute;
+            top: 0px;
+            right: 11px;
+        }
+ 
+        .ContentOne .storeNav .secondOne {
+            width: 177px;
+            height: 126px;
+            background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%),
+                linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+            position: absolute;
+            top: 35px;
+            /* z-index: 999; */
+            display: flex;
+            flex-direction: column;
+            padding: 8px 5px 8px 5px;
+            box-shadow: 0 0 12px #000000;
+            display: none;
+        }
+        .ContentOne .storeNav .secondTwo {
+            width: 177px;
+            height: 156px;
+            background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%),
+                linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+            position: absolute;
+            top: 35px;
+            left: 76px;
+            /* z-index: 999; */
+            display: flex;
+            flex-direction: column;
+            padding: 8px 5px 8px 5px;
+            box-shadow: 0 0 12px #000000;
+            display: none;
+        }
+        .ContentOne .storeNav .secondThree {
+            width: 940px;
+            height: 560px;
+            background: linear-gradient(90deg, rgba(33, 162, 255, 0.1) 1.89%, rgba(50, 50, 51, 0) 50%),
+                linear-gradient(180deg, #575860 11.6%, #3A4852 54.73%, #2C2D34 100%);
+            position: absolute;
+            top: 35px;
+            left: 0px;
+            /* z-index: 999; */
+            display: flex;
+            flex-direction: row;
+            padding: 8px 5px 8px 5px;
+            box-shadow: 0 0 12px #000000;
+            display: none;
+        }
+        /* .ContentOne .storeNav .secondTwo>div:nth-child(1){
+        } */
+        .ContentOne .storeNav .secondOne>a {
+            color: #D8D8D8;
+            font-size: 12px;
+            text-align: left;
+            text-decoration: none;
+            margin: 6px 0 6px 15px;
+ 
+        }
+        .ContentOne .storeNav .secondTwo>a{
+            color: #D8D8D8;
+            font-size: 12px;
+            text-align: left;
+            text-decoration: none;
+            margin: 6px 0 6px 15px;
+        }
+        .ContentOne .storeNav .secondOne>a:hover {
+            text-decoration: 2px underline white;
+        }
+        .ContentOne .storeNav .secondTwo>a:hover {
+            text-decoration: 2px underline white;
+        }
+
+————————————————
+版权声明：本文为CSDN博主「Waghhhh」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/Waghhhh/article/details/120224172

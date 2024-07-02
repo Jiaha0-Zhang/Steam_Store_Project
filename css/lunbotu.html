@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+      .all {
+                 width: 940px;
+                 height: 181px;
+                 position: relative;
+                 overflow: hidden;
+                 margin: 0 auto;
+             }
+      
+             .block {
+                 width: 940px;
+                 height: 181px;
+                 position: relative;
+                 overflow: hidden;
+                 margin: 0 auto;
+             }
+      
+             .block>div:nth-child(1) {
+                 width: 4900px;
+                 height: 400px;
+                 margin-left: 0px;
+             }
+      
+             .block>div>img {
+                 float: left;
+                 width: 292px;
+                 height: 136px;
+				 margin-left: 16px;
+             }
+      
+             .nowpage {
+                 transition: margin-left 0.5s ease-in-out;
+             }
+      
+             .point {
+                 position: absolute;
+                 width: 108px;
+                 height: 15px;
+                 bottom: 20px;
+                 left: 416px;
+             }
+      
+             .point>div {
+                 width: 14px;
+                 height: 14px;
+                 border-radius: 50%;
+                 background-color: white;
+                 float: left;
+                 margin: 0 2px;
+                 border: 2px solid black;
+                 box-sizing: border-box;
+             }
+      
+             .btn_left {
+                 width: 20px;
+                 height: 40px;
+                 background-color: rgba(158, 155, 155, 0.301);
+                 z-index: 9999;
+                 left: 0;
+                 top: 155px;
+                 text-align: center;
+                 line-height: 40px;
+                 color: rgba(250, 235, 215, 0.452);
+                 cursor: pointer;
+             }
+      
+             .btn_left:hover {
+                 background-color: rgb(109, 101, 101);
+             }
+      
+             .btn_right {
+                 width: 20px;
+                 height: 40px;
+                 background-color: rgba(158, 155, 155, 0.301);
+                 z-index: 9999;
+                 right: 0px;
+                 top: 155px;
+                 text-align: center;
+                 line-height: 40px;
+                 color: rgba(250, 235, 215, 0.452);
+                 cursor: pointer;
+             }
+      
+             .btn_right:hover {
+                 background-color: rgb(109, 101, 101);
+             }
+
+    </style>
+    <body>
+      
+          <div class="all">
+              <div class="block">
+                  <div>
+                      <img src="../steam/header_292x136 sdsd.jpg" alt="">
+                      <img src="../steam/header_292x136_schinesse.jpg" alt="">
+                      <img src="../steam/header_292x136_schinsese.jpg" alt="">
+                      <img src="../steam/header_292x136_schisnesse.jpg" alt="">
+                      <img src="../steam/header_292x136_schsinese.jpg" alt="">
+                      <img src="../steam/header_alt_assets_4.jpg" alt="">
+                      <img src="../steam/header_292x136r.jpg" alt="">
+					   <img src="../steam/header.jpg" alt="">			  
+                 </div>
+                  <div class="point">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div> 
+                  </div>
+              </div>
+              <div class="btn_left">
+                  </div>   <div class="btn_right">
+              </div> 
+          </div>
+		  
+	</body>
+	<script type="text/javascript">
+		   var block = document.getElementsByClassName('block')[0];
+		        var block_child = block.children[0];
+		        var point = document.getElementsByClassName('point')[0].children;
+		        var btn_left = document.getElementsByClassName('btn_left')[0];
+		        var btn_right = document.getElementsByClassName('btn_right')[0];
+		        var count = 0;
+		        var time;
+		        point[0].style.backgroundColor = 'black';
+		        window.onload = showpage();
+		// 总函数，在页面加载完成后执行，由于位置已经在页面内容之下，所以可以直接调用
+		        function showpage() {
+		            time = setInterval(function () {
+		                page_onice();
+		            }, 2500)
+		        }
+		// 将所有的函数都封装，方便调用
+		// 执行一次的函数
+		        function page_onice() {
+		            block_child.className = 'nowpage';
+		            point[count].style.backgroundColor = 'white';
+		            count++;
+		            var index = count >= block_child.children.length - 1 ? 0 : count;
+		            // index为当前的索引
+		            point[index].style.backgroundColor = 'black';
+		            block_child.style.marginLeft = (-308 * count) + 'px';
+		            // 显示当前的图片
+		            setTimeout(function () {
+		                if (count >= block_child.children.length - 1) {
+		                    count = 0;
+		                    block_child.className = '';
+		                    block_child.style.marginLeft = '0px';
+		                }
+		            }, 500)
+		            // 重点，动画完成执行以消除动画不执行bug
+		        }
+		        
+		        // 点击事件 功能优化
+		        block_child.onmouseenter = function () {
+		            clearInterval(time);
+		        }
+		        // 当鼠标进入时，停止计时器
+		        block_child.onmouseleave = function () {
+		            showpage();
+		            // 鼠标离开，开始计时器
+		        }
+		        btn_left.onclick = function () {
+		            point[count].style.backgroundColor = 'white';
+		            count--;
+		            if (count < 0) {
+		                block_child.className = '';
+		                count = 5;// 由于共有7张图，但是最后一张与第一张相同，所有只需从0~5
+		                block_child.style.marginLeft = '-4200px';
+		                // 重点，count=5时，最后一张图切完，现在显示为第七张图，然后切到第一张图，实现循环
+		                setTimeout(function () {
+		                    block_child.className = 'nowpage';
+		                    block_child.style.marginLeft = (-308 * count) + 'px';
+		                }, 1)//动画完成  1ms可以忽略不计
+		            } else {
+		                block_child.className = 'nowpage';
+		                block_child.style.marginLeft = (-308 * count) + 'px';
+		             
+		            }
+		            point[count].style.backgroundColor = 'black';
+		            当前的图片对应点变色
+		        }
+		        btn_left.onmouseenter = function () {
+		            clearInterval(time);
+		        }
+		        btn_left.onmouseleave = function () {
+		            showpage();
+		        }
+		        // 当鼠标进入btn时，停止计时器
+		        btn_right.onclick = function () {
+		            page_onice();
+		        }
+		        btn_right.onmouseenter = function () {
+		            clearInterval(time);
+		        }
+		        btn_right.onmouseleave = function () {
+		            showpage();
+		        }
+		// 由于是用margin值来移动图片的，所以不用考虑左右的区别，只是移动距离的关系
+		for (var i = 0; i < point.length; i++) {
+		            point[i].index = i;
+		            point[i].onmouseenter = function () {
+		                // console.log(1);
+		                block_child.className = 'nowpage';
+		                block_child.style.marginLeft = (-308 * this.index) + 'px';
+		                point[count].style.backgroundColor = 'white';
+		                this.style.backgroundColor = 'black';
+		                count = this.index;
+		            }
+		        }
+		 
+		        // 页面可见性事件
+		        document.addEventListener('visibilitychange', function () {
+		            if (!document['hidden']) {
+		                showpage();
+		            } else {
+		                clearInterval(time);
+		            }
+		        });
+		        document.onselectstart = function () {
+		            return false;
+		        }
+		
+	</script>
+</html>

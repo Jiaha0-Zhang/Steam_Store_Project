@@ -1,0 +1,545 @@
+/* 头部导航栏样式 */
+body{
+		    position: relative;
+		    min-height: 100%;
+		    font-family: Arial, Helvetica, sans-serif;
+		    color: #c6d4df;
+		    font-size: 12px;
+}
+.header{
+
+		background: #171a21;
+		
+}
+.header{
+
+	    background-position: center top;
+	    min-width: 940px;
+		height: 104px;
+	    font-family: "Motiva Sans", Sans-serif;
+	    font-weight: normal;
+		font-size: 14px;
+}
+div.header{
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.content{
+	right: 0;
+	position: relative;
+	width: 940px;
+	height: 104px;
+	margin: 0 auto;
+	transition: right 0.25s;
+	z-index: 402;
+}
+.logo{
+	padding-top: 30px;
+	margin-right: 40px;
+	float: left;
+	width: 176px;
+	height: 44px;
+	color: #0000FF;
+}
+/* 导航栏菜单栏 */
+.supernav_container{
+	position: absolute;
+	width: 368px;
+	left: 200px;
+}
+
+div.header .menuitem{
+	    position: relative;
+	    padding-top: 45px;
+	    padding-left: 7px;
+	    padding-right: 7px;
+	    padding-bottom: 7px;
+	    line-height: 16px;
+	    float: left;
+	    font-size: 14px;
+	    color: #b8b6b4;
+	    text-transform: uppercase;
+}
+/* 菜单栏字体悬停样式 */
+div.header .menuitem:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+/* 菜单下拉框 */
+.xl{
+		display: none;
+	position: absolute;
+	width: 88px;
+	top: 90%;
+	left: 0%;
+	background: #000;
+	padding: 5px 15px 10px 15px;
+	box-shadow: 3px 3px 5px -3px #000;
+	text-align: left;
+	 z-index: 500;
+}
+/* 菜单栏下拉框2 */
+.xl2{
+	display: none;
+	position: absolute;
+	width: 88px;
+	top: 90%;
+	left: 30%;
+	background: #000;
+	padding: 5px 15px 10px 15px;
+	box-shadow: 3px 3px 5px -3px #000;
+	text-align: left;
+	 z-index: 500;
+}
+/* 下拉框距离左边间距 */
+.submenu_content{
+	margin-left: 15px;
+}
+/* 菜单下拉框字体颜色 */
+.submenuitem{
+	color: #ffffff;
+    display: block;
+    padding: 6px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/* 菜单栏下拉框字体悬浮 */
+.con:hover .xl{
+	display: block;
+	height: 179px;
+	padding: 6px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	opacity: 1;
+}
+/* 下拉框2 */
+.cons:hover .xl2{
+	display: block;
+	height: 188px;
+	padding: 6px 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	opacity: 1;
+}
+.xl2:hover {
+	color: #ffffff;
+}
+.submenu_content .submenuitem:hover{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.supernav_content{
+display: none;
+	height: 0px;
+	transition: .2s;
+	opacity: 0;
+	transform: translateY(-189);
+	background: #000;
+}
+/* 下拉框字体样式 */
+.submenuitem{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	color: #b8b6b4;
+	padding-right: 10px;
+	padding: 6px 10px 6px 0;
+	transition: height .25s;
+	overflow: hidden;
+	display: block;
+}
+/* Steam下载安装 */
+.actions{
+	position: absolute;
+	right: 0px;
+	top: 6px;
+	height: 21px;
+	line-height: 21px;
+	color: #b8b6b4;
+	font-size: 11px;
+	z-index: 400;
+}
+.action_menu{
+	position: relative;
+	line-height: 24px;
+	vertical-align: top;
+	display: inline-block;
+}
+.action_menu > *{
+	vertical-align: top;
+}
+.header_installsteam_btn{
+	display: inline-block;
+	position: relative;
+	height: 21px;
+	line-height: 24px;
+	margin-right: 3px;
+}
+/* 安装背景 */
+.header_installsteam_btn_content{
+	background-color: #5c7e10;
+}
+/* 安装样式设置 */
+.header_installsteam_btn_content{
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 9px;
+	background-position: 10px 5px;
+	background-image: url(../img/主页/btn_header_installsteam_download.png);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: #e5e4dc;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+/* 登录 */
+.action_link{
+	color: #b8b6b4;
+	padding: 0 4px;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+.actions > *{
+	vertical-align: top;
+}
+.actions a:hover{
+	color: #FFFFFF;
+}
+.actions span:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+/* 语言 */
+.pulldown{
+	display: inline-block;
+	padding-left: 4px;
+	line-height: 25px;
+	padding-right:18px;
+	background-image: url(../img/主页/btn_arrow_down_padded.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	font-family: "Motiva Sans", Sans-serif;
+	font-weight: normal;
+}
+.pulldowns{
+	display: inline-block;
+}
+/* 语言下拉框 */
+.popup_block_new .popup_body{
+	border: 1px solid #171a21;
+	position: relative;
+	background-color: #171a21;
+}
+.action_menu > *{
+	vertical-align: top;
+}
+.popup_block_new{
+	display: none;
+	z-index: 200;
+	position: absolute;
+	box-shadow: 0 0 12px #000000;
+	right: 0%;
+}
+/* 语言下拉框悬浮 */
+/* 语言文字 */
+.popup_menu_item{
+	top: 5%;
+		display: block;
+	    padding: 5px 12px;
+	    color: #b8b6b4;
+	   text-transform: none;
+	    font-family: Motiva Sans, Arial, Helvectica, Verdana, sans-serif;
+	    font-size: 12px;
+	    font-weight: normal;
+	    line-height: normal;
+	    text-align: left;
+	    cursor: pointer;
+		white-space:nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+}
+.responsive_page_template_content {
+width: 100%;
+height: 800px;
+background-color: RGB(33,36,41);
+position: relative;
+}
+.page_content_flex{
+	position: absolute;
+	top: 0px;
+	
+	margin-left: 280px;
+	width: 940px;
+	height: 800px;
+	
+}
+.login_left_col {
+	width: 620px;	
+	height: 800px;
+	    background: radial-gradient(60.12% 60.12% at 104.83% -0.03%, rgb(74, 81, 92, 0.3) 0%, rgba(74, 81, 92, 0) 100%);
+}
+.login_col_paddingg {
+	position: absolute;
+	top: 0px;
+	left: 621px;
+	width: 320px;
+	height: 700px;
+	
+}
+.subtext {
+	    max-width: 60%;
+	    text-align: center;
+	    font-size: 14px;
+		color: #b8b6b4;
+		margin-left: 60px;
+		margin-top: 90px;
+}
+.about_link {
+	    display: block;
+	    max-width: 60%;
+	    text-align: center;
+	    font-size: 14px;
+		    margin-top: 10px;
+		    color: #FFFFFF;
+			margin-left: 60px;
+}
+.login_btn_ctnn {
+	width: 140px;
+	height: 74px;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+.subtextt{
+	    font-size: 14px;
+	    color: #b8b6b4;
+}
+.login_btn_ctnn a{
+	    margin: 20px 0 0 0;
+	    display: block;
+	    text-align: center;
+}
+.btnv6_white_transparent {
+	    border-radius: 2px;
+	    border: none;
+	    padding: 1px;
+	    display: inline-block;
+	    cursor: pointer;
+	    text-decoration: none !important;
+	    color: #fff !important;
+	    background: transparent;	
+		
+}
+.login_btn_ctnn span {
+	padding: 10px;
+	border: 1px #FFFFFF solid;
+}
+.login_btn_ctnn a:hover span {
+	border: 2px #FFFFFF solid;
+}
+.login_left_col .login_col_padding{
+	margin: 0 auto;
+	width: 580px;
+	height: 352px;	
+}
+.loginbox_content {
+	/* position: absolute; */
+	
+	width: 274px;
+	height: 315px;
+	margin: 0 auto;
+}
+.login_title {
+	margin-top: 40px;
+	position: absolute;
+	left: 170px;
+	font-size: 34px;
+	text-align: center;
+	font-weight: 200;
+	letter-spacing: 2px;
+	width: 274px;
+	height: 48px;
+	margin-bottom: 30px;
+	
+}
+.login_titlee {
+	margin-top: 60px;
+	width: 274px;
+	height: 61px;
+	
+}
+.login_titleee {
+	width: 274px;
+	height: 61px;
+	
+}
+.input_title {
+	width: 274px;
+	height: 20px;
+	    font-size: 14px;
+	    color: #b8b6b4;
+	    margin-bottom: 5px;
+}
+.login_titlee input {
+	width: 288px;
+	height: 36px;
+	background-color: RGB(50,53,60);
+	
+}
+.login_titleee input {
+	width: 288px;
+	height: 36px;
+	background-color: RGB(50,53,60);
+	
+}
+.login_btn_ctn {
+	margin-top: 20px;
+	width: 100%;
+	height: 75px;	
+}
+.login_btn_signin {
+	width: 192px;
+	height: 100%;
+	
+	margin: 0 auto;
+}
+.login_btn_signin button {
+	width: 190px;
+	height: 36px;
+	background-color: red;
+	    border-radius: 2px;
+	    border: none;
+	    padding: 1px;
+	    display: inline-block;
+	    cursor: pointer;
+	    text-decoration: none !important;
+	    color: #c3e1f8;
+	    !important: ;
+	    background: transparent;
+	    text-shadow: 1px 1px 0px rgb(0 0 0 / 30%);
+		appearance: auto;
+		    writing-mode: horizontal-tb !important;
+		    font-style: ;
+		    font-variant-ligatures: ;
+		    font-variant-caps: ;
+		    font-variant-numeric: ;
+		    font-variant-east-asian: ;
+		    font-weight: ;
+		    font-stretch: ;
+		    font-size: ;
+		    font-family: ;
+		    text-rendering: auto;
+		    color: buttontext;
+		    letter-spacing: normal;
+		    word-spacing: normal;
+		    line-height: normal;
+		    text-transform: none;
+		    text-indent: 0px;
+		    text-shadow: none;
+		    display: inline-block;
+		    text-align: center;
+		    align-items: flex-start;
+		    cursor: default;
+		    box-sizing: border-box;
+		    background-image: linear-gradient(to right,  RGB(60,161,240),RGB(37,97,208));
+		    margin: 0em;
+		    padding: 1px 6px;
+		    border-width: 2px;
+		    border-style: outset;
+		    border-color: buttonborder;
+		    border-image: initial;
+			    border: none;
+}
+.login_btn_signin span {
+	color: white;
+	font-size: 15px;
+}
+.login_btn_signin a {
+	margin-top: 20px;
+	display: block;
+	text-align: center;
+	color: white;
+}
+
+/* 页脚 */
+#footer_spacer{
+	position: relative;
+	height: 210px;
+	top: auto;
+	bottom: auto;
+	padding: 0px 0px 0px;
+	background-color: #1D2024;
+}
+#footer{
+	font-family: "arial, helvetica, sans-serif";
+	background: #171a21;
+	position: absolute;
+	top: %;
+	left: 0%;
+	width: 100%;
+	height: 183px;
+
+	-webkit-text-size-adjust: none;
+}
+.footer_content{
+	top: 55px;
+	width: 940px;
+	margin: 0px auto;
+	padding-top: 30px;
+}
+#footer_logo img{
+	height: 25px;
+	width: auto;
+}
+.rule{
+	height: 8px;
+	border-top: 1px solid #363c44;
+}
+#footer_logo{
+	float: left;
+	padding-top: 2px;
+}
+#footer_logo_steam{
+	float: right;
+	padding: 2px;
+}
+#footer #footer_text{
+	float: left;
+	margin-left: 12px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #8F98A0;
+}
+#footer #footer_text a{
+	color: #C6D4DF;
+}
+#footer #footer_text a:hover{
+	color: #FFFFFF;
+}
+.valve_links{
+	margin-top: 8px;
+	float: left;
+	font-family: "microsoft sans serif";
+	font-weight: normal;
+	font-size: 13px;
+	color: #61686d;
+}
+.valve_links a{
+	color: #C6D4DF;
+}
+.valve_links a:hover{
+	color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+

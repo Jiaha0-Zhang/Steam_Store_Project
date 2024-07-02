@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			Community Activity
+		</title>
+		<!-- 导入网页logo -->
+		<link rel="icon" href="../steam/favicon.ico">
+		<!-- 导入清除全局样式 -->
+		<link rel="stylesheet" href="reset.css">
+		<!-- 导入本项目css文件 -->
+		<link rel="stylesheet" href="community.css">
+	</head>
+	<body>
+		<!-- Head 页首  导航栏 -->
+				<div class="header">
+				<div class="content">
+				<div class="logo">
+					<a href="#">
+						<img src="../steam/header_logo.png" width="176" height="44">
+					</a>
+				</div>
+				<!-- 菜单栏 -->
+				<div class="supernav_container">
+					<div class="con">
+						<a class="menuitem shop " href="index.html"><span>Store</span></a>
+						<div class="xl">
+							<div class="submenu_content" >
+								<a class="submenuitem" href="index.html">Home</a>
+								<a class="submenuitem" href="#">Discovery Queue</a>
+								<a class="submenuitem" href="#">WishList</a>
+								<a class="submenuitem" href="#">Points Shop</a>
+								<a class="submenuitem" href="#">News</a>
+								<a class="submenuitem" href="#">Stats</a>
+							</div>
+						</div>
+					</div>
+					<div class="cons">
+						<a class="menuitem community " href="#">Community</a>
+						<div class="xl2">
+							<div class="submenu_content" >
+								<a class="submenuitem" href="index.html">Home</a>
+								<a class="submenuitem" href="#">Discussion</a>
+								<a class="submenuitem" href="#">Workshop</a>
+								<a class="submenuitem" href="#">Market</a>
+								<a class="submenuitem" href="#">Broadcast</a>
+							</div>
+						</div>
+					</div>
+					</a>
+					<a class="menuitem supernav" href="#">About</a>
+					<a class="menuitem supernav" href="../support.html">Support</a>
+					<!-- 菜单栏下拉框 -->		
+				</div>
+				<div class="actions">
+					<div class="action_menu" >
+						<div class="header_installsteam_btn header_installsteam_btn_green">
+							<a class="header_installsteam_btn_content" href="">Install Steam</a>
+						</div>
+						<a class="action_link" href="../login.html">login</a>
+						&nbsp;|&nbsp;
+						<div class="pulldowns" onclick="show()">
+							<span class="pulldown action_link" id="language_pulldown">language</span>
+						<div class="popup_block_new" id="language_dropdown">
+							<div class="popup_body popup_menu">
+								<a class="popup_menu_item tight" href="#" >简体中文(Simplified Chinese)</a>
+								<a class="popup_menu_item tight" href="#" >繁體中文(Traditional Chinese)</a>
+								<a class="popup_menu_item tight" href="#" >日本語(Japanese)</a>
+								<a class="popup_menu_item tight" href="#" >한국어(Korean)</a>
+								<a class="popup_menu_item tight" href="#" >ไทย(Thai)</a>
+								<a class="popup_menu_item tight" href="#" >български(Bulgarian)</a>
+								<a class="popup_menu_item tight" href="#" >Čeština(Czech)</a>
+								<a class="popup_menu_item tight" href="#" >Dansk(Danish)</a>
+								<a class="popup_menu_item tight" href="#" >Deutsch(German)</a>
+								<a class="popup_menu_item tight" href="#" >English(English)</a>
+								<a class="popup_menu_item tight" href="#" >Español-España(Spanish-Spain)</a>
+								<a class="popup_menu_item tight" href="#" >Español - Latinoamérica(Spanish-Latin America)</a>
+								<a class="popup_menu_item tight" href="#" >Ελληνικά(Greek)</a>
+								<a class="popup_menu_item tight" href="#" >Français(French)</a>
+								<a class="popup_menu_item tight" href="#" >Italiano(Italian)</a>
+								<a class="popup_menu_item tight" href="#" >Magyar(Hungarian)</a>
+								<a class="popup_menu_item tight" href="#" >Nederlands(Dutch)</a>
+								<a class="popup_menu_item tight" href="#" >Norsk(Norwegian)</a>
+								<a class="popup_menu_item tight" href="#" >Polski(Polish)</a>
+								<a class="popup_menu_item tight" href="#" >Português(Portuguese)</a>
+								<a class="popup_menu_item tight" href="#" >Português-Brasil(Portuguese-Brazil)</a>
+								<a class="popup_menu_item tight" href="#" >return false;">Română(Romanian)</a>
+								<a class="popup_menu_item tight" href="#" >Русский(Russian)</a>
+								<a class="popup_menu_item tight" href="#" >Suomi(Finnish)</a>
+								<a class="popup_menu_item tight" href="#" >Svenska(Swedish)</a>
+								<a class="popup_menu_item tight" href="#" >Türkçe(Turkish)</a>
+								<a class="popup_menu_item tight" href="#" >Tiếng Việt(Vietnamese)</a>
+								<a class="popup_menu_item tight" href="#" >Українська(Ukrainian)</a>
+								<a class="popup_menu_item tight" href="#" >Report a translation problem</a>
+								</div>
+							</div>
+							</div>
+					</div>
+				</div>
+				</div>
+				</div>
+		
+		<!-- 社区 -->
+		<div class="headers">
+			<div class="containers">
+				<div class="box"> </div>
+				<div class="title">Community Activity</div>
+				<div class="subtitle">Community and official content for all games and software on Steam. </div>
+				<div class="hidden">
+					<div class="shortcuts">
+						<div class="login">
+							<div class="login_content">
+								Welcome to Community Activity
+							</div><br>
+							Sign in to the Steam Community to find more centers to browse.
+							<div class="builtin">
+								<a href="../login.html" class="green" style="float: left;">
+									<span>LOG IN</span>
+								</a>
+								<div class="huo"> Or </div>
+								<a href="../login.html" class="greens" style="float: left;">
+									<span>Join Steam</span>
+								</a>
+								<div style="clear: left;"></div>
+							</div>
+							<div class="shiyong">
+								First time with Steam?
+								<a href="#">More</a>
+								。
+							</div>
+						</div>
+						<div class="list">
+							<div class="list_header">YOUR RECENTLY VIEWED HUBS</div>
+							<div class="appHubShortcut">
+								<a href="#">
+									<img class="appHubShortcut_Icon"
+										src="../steam/e3f595a92552da3d664ad00277fad2107345f743.jpg">
+								</a>
+								<a href="#" class="appHubShortcut_Title">Team Fortress 2</a>
+								<div class="new_items_num ellipsis">
+									210 new workshop items&nbsp
+									<span class="benzhou">this week</span>
+								</div>
+							</div>
+							<div class="kong"> </div>
+							<div class="appHubShortcut">
+								<a href="#">
+									<img class="appHubShortcut_Icon"
+										src="../steam/3556d515feda43281aabbcb1ab0d218dec46f807.jpg">
+								</a>
+								<a href="#" class="appHubShortcut_Title">CORPSE FACTORY</a>
+								<div class="new_items_num ellipsis">
+									19 new artwork&nbsp
+									<span class="benzhou">this week</span>
+								</div>
+							</div>
+							<div class="kong"> </div>
+							<div class="appHubShortcut">
+								<a href="#">
+									<img class="appHubShortcut_Icon"
+										src="../steam/b42b46695d3e136415b340260e964034edfcb765.jpg">
+								</a>
+								<a href="#" class="appHubShortcut_Title">Wolf Tails</a>
+								<div class="new_items_num ellipsis">
+									19 new artwork&nbsp
+									<span class="benzhou">this week</span>
+								</div>
+							</div>
+							<div class="kong"> </div>
+							<div class="appHubShortcut">
+								<a href="#">
+									<img class="appHubShortcut_Icon"
+										src="../steam/69f7ebe2735c366c65c0b33dae00e12dc40edbe4.jpg">
+								</a>
+								<a href="#" class="appHubShortcut_Title">Counter-Strike: Global Offensive</a>
+								<div class="new_items_num ellipsis">
+									44 new workshop items&nbsp
+									<span class="benzhou">this week</span>
+								</div>
+							</div>
+							<div class="kong"> </div>
+						</div>
+					</div>
+				</div>
+				<div class="search_box">
+					<div class="shortcuts">
+						<div class="list_header">FIND HUBS</div>
+						<div class="list_header_sousuo">
+							<input id="" class="ziti" type="text" placeholder="Search for products" style="width: 257.1px">
+							<input class="" type="image" src="../steam/search_icon_btn.png">
+						</div>
+						<div class="zhongjian"></div>
+						<div class="list_header">FIND PEOPLE</div>
+						<div class="list_header_sousuo">
+							<input id="" class="ziti" type="text" placeholder="Search for friends" style="width: 257.1px">
+							<input class="" type="image" src="../steam/search_icon_btn.png">
+						</div>
+						<div class="shortcuts">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="tab">
+			<div class="containers">
+				<div class="tab_list">
+					<ul>
+						<li class="current">All</li>
+						<li>Sreenshots</li>
+						<li>Artwork</li>
+						<li>Broadcasts</li>
+						<li>Videos</li>
+						<li>Workshop</li>
+						<li>News</li>
+						<li>Guids</li>
+						<li>Reviews</li>
+					</ul>
+				</div>
+				<div class="heixian"></div>
+				<div class="kong"></div>
+				<div class="tab_list1">
+					<ul>
+						<li>Viewing</li>
+						<li class="zuiremeng">MOST POPULAR</li>
+						<li class="zuixin">MOST RECENT</li>
+					</ul>
+				</div>
+				<div class="tab_con">
+					<div class="item" style="display: block;">
+						<div class="pinlun">
+							2,953 people found this review helpful
+							<br>
+							613 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="thumb">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">4.8 hrs on record</div>
+							</div>
+							<div style="clear: left"></div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 24 @ 10:46am</div>
+								This game needs to show a replay after each failure so that we can see the final moments and identify who is to blame.
+							</div>
+							<div class="kong_1">
+
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tp">32</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun">
+							985,239 people found this review helpful
+							<br>
+							64,756 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="thumb">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">0.9 hrs on record</div>
+							</div>
+							<div style="clear: left"></div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 25 @ 10:46am</div>
+								This game will be delisted from all digital platforms on December 15, 2024. Buy it before it's gone!
+							</div>
+							<div class="kong_1">
+
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tp">27</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							1,321 people found this review helpful
+							<br>
+							401 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">10.2 hrs on record</div>
+							</div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 22 @ 6:36am</div>
+								Free!!!
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tps">27</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							<div class="title">Dota 2: Guid</div>
+							<div class="tupian">
+								<img src="../steam/下载.jpg" alt="">
+								Best Jungler....
+							</div>
+							<div class="kong_1">
+
+							</div>
+							<div class="apphub_CardRating notRated">
+								&nbsp;
+							</div>
+							<img src="../steam/award_icon_blue.svg" alt="">
+							<div class="tps">23</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">Dota 2</a>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							<div class="title">...</div>
+							<div class="tupian">
+								<img src="../steam/下载 (1).jpg" alt="">
+
+							</div>
+							<div class="kong_2">
+								
+							</div>
+							<div class="apphub_CardRating notRated">
+								&nbsp;
+							</div>
+							<img src="../steam/award_icon_blue.svg" alt="">
+							<div class="tps">23</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">Dota 2</a>
+								</div>
+							</div>
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/123 (1).jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/123 (2).jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+
+					</div>
+					<div class="item">
+						<div class="pinlun_3">
+							<img src="../steam/法尔登法环jpg.jpg" alt="" width="924xp" height="520px">
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/123 (1).jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/123 (2).jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="pinlun_3">
+							<img src="../steam/艺术作品.jpg" alt="" width="924xp" height="520px">
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/俩人.jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/ak.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+					</div>
+					<div class="item">
+		 			<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/飞龙.jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/恐怖.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/微光之境.jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/飞船.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/采石场惊魂.jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/小道.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/微光之境.jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/飞船.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/飞龙.jpg" alt="" width="440px" height="287">
+				 		</div>
+							<div class="pinlun">
+								<img src="../steam/恐怖.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+						<div class="quanbu">
+							<div class="pinlun">
+								<img src="../steam/采石场惊魂.jpg" alt="" width="440px" height="287">
+							</div>
+							<div class="pinlun">
+								<img src="../steam/小道.jpg" alt="" width="440px" height="287">
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="pinlun_4">
+							<img src="../steam/1.jpg" alt="" width="609" height="609">
+						</div>
+						<div class="pinlun_5">
+							<img src="../steam/2.jpg" alt="" width="293" height="299">
+						</div>
+						<div class="pinlun_5">
+							<img src="../steam/3.jpg" alt="" width="293" height="299">
+						</div>
+					</div>
+					<div class="item">
+						<div class="pinlun_3">
+							<h1>I really don't know what to write here.</h1>
+						</div>
+					</div>
+					<div class="item">
+						<div class="pinlun_2">
+							<div class="title">Dota 2: Guid</div>
+							<div class="tupian">
+								<img src="../steam/下载 (1).jpg" alt="">
+								
+							</div>
+							<div class="kong_2">
+								1.
+								2.
+								3.
+							</div>
+							<div class="apphub_CardRating notRated">
+								&nbsp;
+							</div>
+							<img src="../steam/award_icon_blue.svg" alt="">
+							<div class="tps">23</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">Dota 2</a>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							<div class="title">Dota 2: Guid</div>
+							<div class="tupian">
+								<img src="../steam/下载 (1).jpg" alt="">
+
+							</div>
+							<div class="kong_2">
+								1.
+								2.
+								3.
+							</div>
+							<div class="apphub_CardRating notRated">
+								&nbsp;
+							</div>
+							<img src="../steam/award_icon_blue.svg" alt="">
+							<div class="tps">23</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">Dota 2</a>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							<div class="title">Dota 2: Guid</div>
+							<div class="tupian">
+								<img src="../steam/下载 (1).jpg" alt="">
+						</div>
+							<div class="kong_2">
+								1.
+								2.
+								3.
+							</div>
+							<div class="apphub_CardRating notRated">
+								&nbsp;
+							</div>
+							<img src="../steam/award_icon_blue.svg" alt="">
+							<div class="tps">23</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">Dota 2</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="pinlun">
+							11,321 people found this review helpful
+							<br>
+							756 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="thumb">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">10.2 hrs on record</div>
+							</div>
+							<div style="clear: left"></div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 22 @ 6:36am</div>
+								Thank you.
+							</div>
+							<div class="kong_1">
+						
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tp">32</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun">
+							3,138 people found this review helpful
+							<br>
+							96 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="thumb">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">70.9 hrs on record</div>
+							</div>
+							<div style="clear: left"></div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: May 13 @ 9:11pm</div>
+								Good game.
+							</div>
+							<div class="kong_1">
+						
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tp">32</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							8,001 people found this review helpful
+							<br>
+							4,256 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">11.5 hrs on record</div>
+							</div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: May 29 @ 10:30am</div>
+								No Comment
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tps">27</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							221 people found this review helpful
+							<br>
+							40 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">3.5 hrs on record</div>
+							</div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 21 @ 10:00am</div>
+								No Comment
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tps">27</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun_2">
+							2,042 people found this review helpful
+							<br>
+							99 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">9.5 hrs on record</div>
+							</div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 22 @ 6:00pm</div>
+								No Comment
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tps">27</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun">
+							1,318 people found this review helpful
+							<br>
+							891 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="thumb">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">9.5 hrs on record</div>
+							</div>
+							<div style="clear: left"></div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 23 @ 8:30am</div>
+								No Comment
+							</div>
+							<div class="kong_1">
+						
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tp">32</div>
+								</div>
+							</div>
+						</div>
+						<div class="pinlun">
+							9,042 people found this review helpful
+							<br>
+							342 people found this review funny <img src="../steam/award_icon_blue.svg" alt="">
+							<div class="thumb">
+								<img src="../steam/icon_thumbsUp.png" alt="" width="44" height="44">
+								<div class="title">Recommended</div>
+								<div class="hours">22.2 hrs on record</div>
+							</div>
+							<div style="clear: left"></div>
+							<div class="apphub_CardTextContent">
+								<div class="date_posted">Posted: Jun 22 @ 16:50pm</div>
+								No Comment
+							</div>
+							<div class="kong_1">
+						
+							</div>
+							<div class="apphub_CardContentAuthorBlock tall">
+								<div class="apphub_CardContentAppName">
+									<a href="#">ARK: Survival Evolved</a>
+									<div class="tp">32</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	<!-- Foot 页脚 -->
+		<!-- Footer -->
+	<!-- <div id="footer_spacer" style="" class="small_footer"></div> -->
+	<div id="footer"  class="small_footer">
+	<div class="footer_content">
+	
+	    <div class="rule"></div>
+					<div id="footer_logo_steam"><img src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png" alt="Valve Software" border="0" /></div>
+		
+	    <div id="footer_logo"><a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer"><img src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png" alt="Valve Software" border="0" /></a></div>
+	    <div id="footer_text" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+	        <div>© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.</div>
+	        <div>VAT included in all prices where applicable. &nbsp;&nbsp;
+	            <a href="#" target="_blank" rel="noreferrer">Privacy Policy</a>
+	            &nbsp; | &nbsp;
+	            <a href="#" target="_blank" rel="noreferrer">Legal</a>
+	            &nbsp; | &nbsp;
+	            <a href="#" target="_blank" rel="noreferrer">Steam Subscriber Agreement</a>
+	            &nbsp; | &nbsp;
+				<a href="#" target="_blank" rel="noreferrer">Refunds</a>
+				&nbsp; | &nbsp;
+				<a href="#" target="_blank" rel="noreferrer">Cookies</a>
+	        </div>
+						<div class="responsive_optin_link">
+					<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+					</div>
+				</div>
+			
+	    </div>
+	    <div style="clear: left;"></div>
+		<br>
+	    <div class="rule"></div>
+	    <div class="valve_links" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}" >
+	        <a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
+	        &nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
+	        &nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank" rel="noreferrer">Steamworks</a>
+	        &nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank" rel="noreferrer">Steam Distribution</a>
+	        &nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">Support</a>
+	        &nbsp; | &nbsp;<a href="http://steam.lli5.cn/digitalgiftcards/?snr=1_44_44_" target="_blank" rel="noreferrer">Gift Cards</a>
+			&nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam" target="_blank" rel="noopener"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+			&nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+	            </div>
+	</div>
+		</div>
+	</body>
+	<script>
+		/* 语言下拉框固定悬浮 */
+					var state=true;
+					function show(){
+						if(state==true){
+							document.getElementById("language_dropdown").style.display="block";
+							state=!state;
+						}else if(state==false){
+							document.getElementById("language_dropdown").style.display="none";
+							state=!state;
+						}
+					}
+		var lis = document.querySelector('.tab_list').querySelectorAll('li');
+		var items = document.querySelectorAll('.item');
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].setAttribute('index', i);
+			lis[i].onclick = function() {
+				for (var i = 0; i < lis.length; i++) {
+					lis[i].className = '';
+				}
+				this.className = 'current';
+
+				//以下是显示内容模块
+				var index = this.getAttribute('index');
+				console.log(index);
+				//排他,显示索引值相同的li
+				for (var i = 0; i < items.length; i++) {
+					items[i].style.display = 'none';
+				}
+				items[index].style.display = 'block';
+			}
+
+		}
+	</script>
+</html>

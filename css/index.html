@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Steam</title>
+		<!-- 导入网页logo -->
+		<link rel="icon" href="../steam/favicon.ico">
+		<!-- 导入清除全局样式 -->
+		<link rel="stylesheet" href="reset.css">
+		<!-- 导入本项目css文件 -->
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<!-- Head 页首  导航栏 -->
+			<div class="header">
+			<div class="content">
+			<div class="logo">
+				<a href="#">
+					<img src="../steam/header_logo.png" width="176" height="44">
+				</a>
+			</div>
+			<!-- 菜单栏 -->
+			<div class="supernav_container">
+				<div class="con">
+					<a class="menuitem shop " href="#"><span>STORE</span></a>
+					<div class="xl">
+						<div class="submenu_content" >
+							<a class="submenuitem" href="#">Home</a>
+							<a class="submenuitem" href="#">Discovery Queue</a>
+							<a class="submenuitem" href="#">WishList</a>
+							<a class="submenuitem" href="#">Points Shop</a>
+							<a class="submenuitem" href="#">News</a>
+							<a class="submenuitem" href="#">Stats</a>
+						</div>
+					</div>
+				</div>
+				<div class="cons">
+					<a class="menuitem community " href="community.html">COMMUNITY</a>
+					<div class="xl2">
+						<div class="submenu_content" >
+							<a class="submenuitem" href="#">Home</a>
+							<a class="submenuitem" href="#">Discussion</a>
+							<a class="submenuitem" href="#">Workshop</a>
+							<a class="submenuitem" href="#">Market</a>
+							<a class="submenuitem" href="#">Broadcast</a>
+						</div>
+					</div>
+				</div>
+
+				</a>
+				<a class="menuitem supernav" href="#">ABOUT</a>
+				<a class="menuitem supernav" href="../support.html">SUPPORT</a>
+				<!-- 菜单栏下拉框 -->		
+			</div>
+			<div class="actions">
+				<div class="action_menu" >
+					<div class="header_installsteam_btn header_installsteam_btn_green">
+						<a class="header_installsteam_btn_content" href="#">Install Steam</a>
+					</div>
+					<a class="action_link" href="../login.html">login</a>
+					&nbsp;|&nbsp;
+					<div class="pulldowns" onclick="show()">
+						<span class="pulldown action_link" id="language_pulldown">language</span>
+					<div class="popup_block_new" id="language_dropdown">
+						<div class="popup_body popup_menu">
+							<a class="popup_menu_item tight" href="#" >简体中文(Simplified Chinese)</a>
+							<a class="popup_menu_item tight" href="#" >繁體中文(Traditional Chinese)</a>
+							<a class="popup_menu_item tight" href="#" >日本語(Japanese)</a>
+							<a class="popup_menu_item tight" href="#" >한국어(Korean)</a>
+							<a class="popup_menu_item tight" href="#" >ไทย(Thai)</a>
+							<a class="popup_menu_item tight" href="#" >български(Bulgarian)</a>
+							<a class="popup_menu_item tight" href="#" >Čeština(Czech)</a>
+							<a class="popup_menu_item tight" href="#" >Dansk(Danish)</a>
+							<a class="popup_menu_item tight" href="#" >Deutsch(German)</a>
+							<a class="popup_menu_item tight" href="#" >English(English)</a>
+							<a class="popup_menu_item tight" href="#" >Español-España(Spanish-Spain)</a>
+							<a class="popup_menu_item tight" href="#" >Español - Latinoamérica(Spanish-Latin America)</a>
+							<a class="popup_menu_item tight" href="#" >Ελληνικά(Greek)</a>
+							<a class="popup_menu_item tight" href="#" >Français(French)</a>
+							<a class="popup_menu_item tight" href="#" >Italiano(Italian)</a>
+							<a class="popup_menu_item tight" href="#" >Magyar(Hungarian)</a>
+							<a class="popup_menu_item tight" href="#" >Nederlands(Dutch)</a>
+							<a class="popup_menu_item tight" href="#" >Norsk(Norwegian)</a>
+							<a class="popup_menu_item tight" href="#" >Polski(Polish)</a>
+							<a class="popup_menu_item tight" href="#" >Português(Portuguese)</a>
+							<a class="popup_menu_item tight" href="#" >Português-Brasil(Portuguese-Brazil)</a>
+							<a class="popup_menu_item tight" href="#" >return false;">Română(Romanian)</a>
+							<a class="popup_menu_item tight" href="#" >Русский(Russian)</a>
+							<a class="popup_menu_item tight" href="#" >Suomi(Finnish)</a>
+							<a class="popup_menu_item tight" href="#" >Svenska(Swedish)</a>
+							<a class="popup_menu_item tight" href="#" >Türkçe(Turkish)</a>
+							<a class="popup_menu_item tight" href="#" >Tiếng Việt(Vietnamese)</a>
+							<a class="popup_menu_item tight" href="#" >Українська(Ukrainian)</a>
+							<a class="popup_menu_item tight" href="#" >Report a translation problem</a>
+							</div>
+						</div>
+						</div>
+				</div>
+			</div>
+			</div>
+			</div>
+		<!-- 第一段 -->
+	<div class="ContentOne">
+	    <div class="kong">
+	        <div class="leftMenu">
+	            <a href="数字礼物卡.html"><img src="../steam/steamcards_promo_02.png" alt="" class="leftMenup1" ></a><br>
+	            <ul>Gift Card
+	                <li><a href="夏日游戏公告.html">Now available on Steam</a></li>
+	            </ul>
+	            <ul>Recommendation
+	                <li>
+	                    <div
+	                        style="background-position: 0px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="3">By Friends</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -16px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">By Curators</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -32px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Tags</a>
+	                </li>
+	            </ul>
+	            <ul>Discovery Queues
+	                <li>
+	                    <div
+	                        style="background-position: -48px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Recommendations</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -64px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">New Releases</a>
+	                </li>
+	            </ul>
+	            <ul>Browse Categories
+	                <li>
+	                    <div
+	                        style="background-position: -80px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Top Sellers</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -112px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Recent Updated</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -128px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Upcoming</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -144px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Specials</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -160px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">VR</a>
+	                </li>
+	                <li>
+	                    <div
+	                        style="background-position: -176px 0px;background-image: url('../steam/store_menu_icons.png');">
+	                    </div>
+	                    <a href="#">Steam Controller Friendly</a>
+	                </li>
+	            </ul>
+	            <ul>Browse by Genre
+	                <li><a href="#">Free to Play</a></li>
+	                <li><a href="#">Early Access</a></li>
+	                <li><a href="#">Casual</a></li>
+	                <li><a href="#">Sports</a></li>
+	                <li><a href="#">Adventure</a></li>
+	                <li><a href="#">Action</a></li>
+	                <li><a href="#">Massively Multiplayer</a></li>
+	                <li><a href="#">Simulation</a></li>
+	                <li><a href="#">Indie</a></li>
+	                <li><a href="#">Racing</a></li>
+	                <li><a href="#">Strategy</a></li>
+	                <li><a href="#">RPG</a></li>
+	            </ul>
+	       </div>
+			  <!-- 这里搜索栏 -->
+			      <div class="zitis">
+			      	<img src="../steam/page_bg_2024summer.png" alt="picture unloaded">
+					  <!-- <video autoplay muted loop id="Typing_Video">
+						<source src="../steam/page_bg_2024summer.mp4" type="video/mp4">
+						<!--Display message if video fails to run-->
+					<!-- </video> -->
+			      </div>
+			        <div class="storeNav">
+			            <div class="store"></div>
+			            <div class="new"></div>
+			            <div class="kind"></div>
+				 
+			            <ul>
+			                <li class="yourStore">Your Store</li>
+			                <li class="news">NoteWorthy</li>
+			                <li>Categories</li>
+			                <li>Points</li>
+			                <li>News</li>
+			                <li>Labs</li>
+			                <li class="emptyNav">
+			                    <div></div>
+			                </li>
+			                <li class="search">
+			                    <div class="searchFor">
+			                        <input type="text" placeholder="Search" size="22" autocomplete="off">
+			                        <img src="../steam/search_icon_btn.png" alt="">
+			                    </div>
+				 
+			                </li>
+			            </ul>
+				 
+			            <div class="secondOne">
+			                <a href="#">Home</a>
+			                <a href="#">Preferences</a>
+			                <a href="#">Becase You Love</a>
+			                <a href="#">Steam Curators</a>
+			            </div>
+			            <div class="secondTwo">
+			                <a href="#">Top Sellers</a>
+			                <a href="#">Popular New Realease</a>
+			                <a href="#">Specials</a>
+			                <a href="#">Recent Updated</a>
+			                <a href="#">Upcoming</a>
+			            </div>
+			            <!-- <div class="secondThree">
+			                <div>
+								Free to Play
+							</div>
+			            </div> -->
+			        </div>
+				 <!-- 轮播图 1-->
+					<div id="slider">
+						<div class="zitis">FEATURED & RECOMMENDED</div> 
+					        <!-- 图片部分 -->
+					        <ul class="slider-list">
+					            <!-- <li><a href="#"><img src="./img/5.jpg"></a></li> -->
+					            <li><a href="#"><img src="../steam/屏幕截图 2022-06-20 184313.png"></a></li>
+					            <li><a href="#"><img src="../steam/屏幕截图 2022-06-20 184424.png"></a></li>
+					            <li><a href="#"><img src="../steam/123.png"></a></li>
+					            <li><a href="#"><img src="../steam/321.png"></a></li>
+					            <li><a href="#"><img src="../steam/屏幕截图 2022-06-20 184349.png"></a></li>
+					            <li><a href="#"><img src="../steam/3~D8A2SQO`MFPGUSKG{F[@L.png"></a></li>
+					        </ul>
+					         <!-- 小点部分 -->
+					       <div class="dot-list">
+					        <span class="dot cur"></span>
+					        <span class="dot"></span>
+					        <span class="dot"></span>
+					        <span class="dot"></span>
+					        <span class="dot"></span>
+					    </div>
+					    <!--箭头布分 -->
+					    <a href="#" class="arraw prev" id="left">
+					        <span></span>
+					    </a>
+					    <a href="#" class="arraw next" id="right">
+					     <span></span>
+					 </a>
+					        
+					    </div>
+			   		
+					<!-- 轮播图2 -->
+					
+					  		<div class="zitis">&nbsp</div> 
+					  <div class="div1">
+						  <div class="zitis">SPECIAL OFFERS</div> 
+					          <div id="div2" class="div01">1</div>
+					          <div id="div3" class="div01">2</div>
+					          <div id="div4" class="div01">3</div>
+					          <img id="img1" class="img01" src="../steam/125.png">
+					          <img id="img2" class="img01" src="../steam/123.png">
+					          <img id="img3" class="img01" src="../steam/321.png">
+					          <img id="img4" class="img01" src="../steam/3~D8A2SQO`MFPGUSKG{F[@L.png">
+					      </div>
+					     
+					  </body>
+					  	
+					  		
+
+					<!--未登录时 -->
+					<div class="home_page_sign_in_ctn small">
+					                    <p>Log in to view personalized recommendations</p>
+					                    <div class="signin_buttons_ctn">
+					                       <a href="#" class="btn_green_white_innerfade  btn_border_2px btn_medium" >
+					                       	<span>LOG IN</span>
+					                       </a>
+					                        <br>
+											<br>
+					 Or<a href="#"> enroll </a>and free to join Steam                   
+										</div>	
+					                </div>
+			<div class="browseSt">
+			            <div class="tittle">BROWSE STEAM</div>
+			            <div class="content">
+			                <div>NEW</div>
+			                <div>OFFERS</div>
+			                <div>FREE GAMES</div>
+			                <div>BY USER TAGS</div>
+			            </div>
+			 
+			        </div>
+			        <div class="Vr">
+			            <div class="tittle">POPULAR VR GAMES</div>
+			            <div class="content">
+			                <div class="vrGame">
+			                    <div><img src="../steam/header_292x136(2).jpg" alt="">
+			                        <div>￥70</div>
+			                    </div>
+			                    <div><img src="../steam/header_292x136_alt_assets_4.jpg" alt="">
+			                        <div>￥163</div>
+			                    </div>
+			                    <div><img src="../steam/header_292x136_schinese.jpg" alt="">
+			                        <div>￥278</div>
+			                    </div>
+			                    <div><img src="../steam/header_292x136_alt_assets_3.jpg" alt="">
+			                        <div>￥90</div>
+			                    </div>
+			                </div>
+			                <div class="VrPoint">
+			                    <div></div>
+			                    <div></div>
+			                </div>
+			            </div>
+			            <div class="leftArrow">
+			                <div></div>
+			            </div>
+			            <div class="rightArrow">
+			                <div></div>
+			            </div>
+			        </div>
+			        <!-- 内容第二段 -->
+			        <div class="ContentTwo">
+			            <div class="hard">
+			                <div class="hardHeader">
+			                    <div>NEW & TRENDING</div>
+			                    <div>TOP SELLERS</div>
+			                    <div>POPULAR UPCOMING</div>
+			                    <div>DISCOUNT</div>
+			                </div>
+			                <span class="right1"></span>
+			                <span class="right2"></span>
+			                <span class="right3"></span>
+			                <span class="right4"></span>
+			                <span class="right5"></span>
+			                <span class="right6"></span>
+			                <span class="right7"></span>
+			                <span class="right8"></span>
+			                <span class="right9"></span>
+			                <span class="right10"></span>
+			                <div class="hardContent">
+			                    <div class="contentHeader">
+			                        More：<a href="#">New</a>
+			                    </div>
+			                    <div class="hardContentGame">
+			                        <div>
+			                            <img src="../steam/capsuless_184x69.jpg" alt="">
+			                            <div class="gameName">Flowers -Le volume sur hiver-</div>
+			                            <img src="" alt="" class="gameIcon">
+			                            <div class="label">Adventure, Casual, Visual Novel, LGBTQ+</div>
+			                            <div class="price">$19.99</div>
+			                        </div>
+			                        <div>
+										<img src="../steam/capsule_184x69_schine.jpg" alt="">
+			                            <div class="gameName">The Harem Life of Peerless Swordsmen</div>
+			                            <img src="" alt="" class="gameIcon">
+			                            <div class="label">Sexual Content, Nudity, Hentai, Mature, RPG</div>
+			                            <div class="price">$7.99</div>
+			                        </div>
+			                        <div><img src="../steam/capsulec_184x69.jpg" alt="">
+			                            <div class="gameName">Demon Sword: Incubus</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">Action, RPG, 2D Fighter, JRPG, 3D Fighter</div>
+			                            <div class="price">$19.99</div>
+			                        </div>
+			                        <div><img src="../steam/capsule_184x_schinese.jpg" alt="">
+			                            <div class="gameName">Riddle Girl</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">Sexual Content, Casual, RPG</div>
+			                            <div class="price">$2.99</div>
+			                        </div>
+			                        <div><img src="../steam/capsule_184x69_schines (s) (2).jpg" alt="">
+			                            <div class="gameName">月に寄りそう乙女の作法</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">Visual Novel, Word Game, Story Rich, Casual</div>
+			                            <div class="price">$39.99</div>
+			                        </div>
+			                        <div><img src="../steam/capsule_s184x69.jpg" alt="">
+			                            <div class="gameName">Starship Troopers: Terran Command</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">Strategy, RTS, Singleplayer, Military, Tactical</div>
+			                            <div class="price">$29.99</div>
+			                        </div>
+			                        <div><img src="../steam/capsule_s184s69.jpg" alt="">
+			                            <div class="gameName">Swarm the City: Zombie Evolved</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">RTS, Zombies, Villain Protagonist, Replay Value</div>
+			                            <div class="price">$4.99</div>
+			                        </div>
+			                        <div><img src="../steam/capssule_14x69 (3).jpg" alt="">
+			                            <div class="gameName">Neon White</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">FPS, Action, Platformer, 3D Platformer, Anime</div>
+			                            <div class="price">$24.99</div>
+			                        </div>
+			                        <div><img src="../steam/capsules_184x69.jpg" alt="">
+			                            <div class="gameName">Teenage Mutant Ninja Turtles: Shredder's Revenge</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">Beat'em up, Multiplayer, Pixel Graphics, 2D</div>
+			                            <div class="price">$24.99</div>
+			                        </div>
+			                        <div><img src="../steam/capssule_14x69 (2).jpg" alt="">
+			                            <div class="gameName">MONSTER HUNTER RISE: SUNBREAK DEMO</div>
+			                            <img src="./steam Website/icon_platform_win.png" alt="" class="gameIcon">
+			                            <div class="label">Action, Hunting, Co-op, Multiplayer, Dragons</div>
+			                            <div class="price">Free to Play</div>
+			                        </div>
+			                    </div>
+			                </div>
+			 
+			                <div class="gameRight1">
+			                    <div class="gameName">Flowers -Le volume sur hiver-</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(1035)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Adventure</div>
+			                        <div>Casual</div>
+			                        <div>Visual Novel</div>
+			                        <div>LGBTQ+</div>
+			                    </div>
+			                    <img src="../steam/ss_edf74d9a05038230c61998f989f9828b8fefb243.600x338.jpg" alt="">
+			                    <img src="../steam/ss_935cb897f3f331c003397c70426683e0517bfa70.600x338.jpg" alt="">
+			                    <img src="../steam/ss_585427b1d64f9704d23165f9bf3ea46c6fb8de21.600x338.jpg" alt="">
+			                    <img src="../steam/ss_24dc565cb45f5061c2d6abcb53673f2e374a6da5.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight2">
+			                    <div class="gameName">The Harem Life of Peerless Swordsmen</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(1356)</span></div>
+			                    </div>
+			                    <div class="label">
+									
+			                        <div>Sexual Content</div>
+			                        <div>Nudity</div>
+			                        <div>Hentai</div>
+			                        <div>Mature</div>
+			                        <div>RPG</div>
+			                    </div>
+			                    <img src="../steam/无双剑士的后宫生活！1.jpg" alt="">
+			                    <img src="../steam/无双剑士的后宫生活！2.jpg" alt="">
+			                    <img src="../steam/无双剑士的后宫生活！3.jpg" alt="">
+			                    <img src="../steam/无双剑士的后宫生活！4.jpg" alt="">
+			                </div>
+			                <div class="gameRight3">
+			                    <div class="gameName">Demon Sword: Incubus</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(1237)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Action</div>
+			                        <div>RPG</div>
+			                        <div>2D Fighter</div>
+			                        <div>3D Fighter</div>
+									
+			                    </div>
+			                    <img src="../steam/魔剑梦魇1.jpg" alt="">
+			                    <img src="../steam/魔剑梦魇2.jpg" alt="">
+			                    <img src="../steam/魔剑梦魇3.jpg" alt="">
+			                    <img src="../steam/魔剑梦魇4.jpg" alt="">
+			                </div>
+			                <div class="gameRight4">
+			                    <div class="gameName">Riddle Girl</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(1,633)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Action</div>
+			                        <div>Casual</div>
+			                        <div>Casual</div>
+			                        <div>RPG</div>
+			                    </div>
+			                    <img src="../steam/ss_b93d600b2a0372d6b5a5d191b46654ba489819d1.600x338.jpg" alt="">
+			                    <img src="../steam/ss_55903e74751601e42fb7f858d5c07ec048386ce2.600x338.jpg" alt="">
+			                    <img src="../steam/ss_8071f719fea2d45baa805449ec550395db700118.600x338.jpg" alt="">
+			                    <img src="../steam/ss_863e192be7733ef8f18f5e5aca3ca90f1c4ddca6.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight5">
+			                    <div class="gameName">Paint the Town Red</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(11,855)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Action</div>
+			                        <div>Gore</div>
+			                        <div>Singleplayer</div>
+			                        <div>RPG</div>
+			                    </div>
+			                    <img src="../steam/ss_c33826ad63621440fc6384e89dcbbca28f84f125.600x338.jpg" alt="">
+			                    <img src="../steam/ss_c4a4545f51c6836ac11c31427944fc7df813edfb.600x338.jpg" alt="">
+			                    <img src="../steam/ss_cb37f3a4226d16fbb0e4681605ef592acba3077f.600x338.jpg" alt="">
+			                    <img src="../steam/ss_cd6d8da12617e67110f2b537de17ad74b50e9375.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight6">
+			                    <div class="gameName">Chernobylite</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(3,507)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>PRG</div>
+			                        <div>Survive</div>
+			                        <div>Adventure</div>
+			                        <div>Horror</div>
+			                    </div>
+			                    <img src="../steam/ss_cebc378d2f7bc78978c21db4e3c5e12ccd067349.600x338.jpg" alt="">
+			                    <img src="../steam/ss_d0ce716c24b5d4ebe318512138b1e0f8445e7683.600x338.jpg" alt="">
+			                    <img src="../steam/ss_d2e9d6e735dc27b24c8640fb048d6e782c17890a.600x338.jpg" alt="">
+			                    <img src="../steam/ss_e019ab65ce02ddf9fa7d9f3eef18fd7e70c01171.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight7">
+			                    <div class="gameName">Banners of Ruin</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(631)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Roguelike</div>
+			                        <div>Card Battle</div>
+			                        <div>Roguelike Deckbuilder</div>
+			 
+			                    </div>
+			                    <img src="../steam/ss_fab3d39d4fdcab63df04a5e7bb69b5c0f81a0896.600x338.jpg" alt="">
+			                    <img src="../steam/ss_e182b6b20bb797500f9f63c561586d920d44e37c.600x338.jpg" alt="">
+			                    <img src="../steam/ss_fbed28aec9059db9477e9bf8fb2ffa92c3ea9e56.600x338.jpg" alt="">
+			                    <img src="../steam/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight8">
+			                    <div class="gameName">Coloring Game 4</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(229)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Free to Play</div>
+			                        <div>Indie</div>
+			                        <div>Casual</div>
+			                        <div>Design</div>
+			                    </div>
+			                    <img src="../steam/ss_ac55306d00923f2902de20bb5ade7f9cc190e8cf.600x338.jpg" alt="">
+			                    <img src="../steam/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.600x338.jpg" alt="">
+			                    <img src="../steam/ss_b65236b365315ebb6da6114ce42cd74b59cab3c8.600x338.jpg" alt="">
+			                    <img src="../steam/ss_24dc565cb45f5061c2d6abcb53673f2e374a6da5.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight9">
+			                    <div class="gameName">Fuga: Melodies of Steel</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(116)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>RPG</div>
+			                        <div>Strategy</div>
+			                        <div>Anime</div>
+			                        <div>War</div>
+			                        <div>JRPG</div>
+			                    </div>
+			                    <img src="../steam/ss_24dc565cb45f5061c2d6abcb53673f2e374a6da5.600x338.jpg" alt="">
+			                    <img src="../steam/ss_edf74d9a05038230c61998f989f9828b8fefb243.600x338.jpg" alt="">
+			                    <img src="../steam/ss_b93d600b2a0372d6b5a5d191b46654ba489819d1.600x338.jpg" alt="">
+			                    <img src="../steam/ss_b65236b365315ebb6da6114ce42cd74b59cab3c8.600x338.jpg" alt="">
+			                </div>
+			                <div class="gameRight10">
+			                    <div class="gameName">The Forgotten City</div>
+			                    <div class="num">
+			                        <span>Recent Reviews: </span>
+			                        <div>Very Positive&nbsp;<span>(287)</span></div>
+			                    </div>
+			                    <div class="label">
+			                        <div>Adventure</div>
+			                        <div>RPG</div>
+			                        <div>Indie</div>
+			                        <div>Exploration</div>
+			                        <div>Time Travel</div>
+			                    </div>
+			                    <img src="../steam/ss_b3bc191e5a8e208fb3931e49838b2f405e6004ed.600x338.jpg" alt="">
+			                    <img src="../steam/ss_b16f4afaa4e11839242f81a268307368cb33f60e.600x338.jpg" alt="">
+			                    <img src="../steam/ss_ae168a00ab08104ba266dc30232654d4b3c919e5.600x338.jpg" alt="">
+			                    <img src="../steam/ss_a3787b7673e663ef78a59397eaf6b50a61ef70ff.600x338.jpg" alt="">
+			                </div>
+			            </div>
+			            <div class="live">
+			                <div class="tittle">LIVE STREAMING</div>
+			                <div class="man">
+			                    <div>
+			                        <img src="../steam/下载1.jpg" alt="">
+			                        <img src="./steam Website/直播/play_icon80.png" alt="" class="btn">
+			                        <div class="livesign">
+			                            <img src="./steam Website/直播/下载.png" alt="" class="redcircle">
+			                            Live
+			                        </div>
+			                        <div class="name">Grounded</div>
+			                        <div class="people">
+			                            12,048
+			                        </div>
+			                    </div>
+			                    <div>
+			                        <img src="../steam/下载2.jpg" alt="">
+			                        <img src="./steam Website/直播/play_icon80.png" alt="" class="btn">
+			                        <div class="livesign">
+			                            <img src="./steam Website/直播/下载.png" alt="" class="redcircle">
+			                            Live
+			                        </div>
+			                        <div class="name">The Ascent</div>
+			                        <div class="people">
+			                            9,977
+			                        </div>
+			                    </div>
+			                    <div>
+			                        <img src="../steam/下载3.jpg" alt="">
+			                        <img src="./steam Website/直播/play_icon80.png" alt="" class="btn">
+			                        <div class="livesign">
+			                            <img src="./steam Website/直播/下载.png" alt="" class="redcircle">
+			                            Live
+			                        </div>
+			                        <div class="name">Chernobylite</div>
+			                        <div class="people">
+			                            4,349
+			                        </div>
+			                    </div>
+			                    <div>
+			                        <img src="../steam/下载4.jpg" alt="">
+			                        <img src="./steam Website/直播/play_icon80.png" alt="" class="btn">
+			                        <div class="livesign">
+			                            <img src="./steam Website/直播/下载.png" alt="" class="redcircle">
+			                            Live
+			                        </div>
+			                        <div class="name">Golf With Your Friends</div>
+			                        <div class="people">
+			                            3,589
+			                        </div>
+			                    </div>
+			                    <div>
+			                        <img src="../steam/下载5.jpg" alt="">
+			                        <img src="./steam Website/直播/play_icon80.png" alt="" class="btn">
+			                        <div class="livesign">
+			                            <img src="./steam Website/直播/下载.png" alt="" class="redcircle">
+			                            Live
+			                        </div>
+			                        <div class="name">Russian Hentai 2</div>
+			                        <div class="people">
+			                            3,207
+			                        </div>
+			                    </div>
+			                    <div>
+			                        <img src="../steam/下载6.jpg" alt="">
+			                        <img src="./steam Website/直播/play_icon80.png" alt="" class="btn">
+			                        <div class="livesign">
+			                            <img src="./steam Website/直播/下载.png" alt="" class="redcircle">
+			                            Live
+			                        </div>
+			                        <div class="name">Mini Motorways</div>
+			                        <div class="people">
+			                            2,390
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="fifteen">
+			                <div class="tittle">UNDER $5</div>
+			                <div class="content">
+			                    <div class="Game">
+			                        <div><img src="../steam/header_292x136 (12).jpg" alt="">
+									
+			                            <div>$4.99</div>
+			                        </div>
+			                        <div><img src="../steam/header_292x136(2).jpg" alt="">
+			                            <div>$1.99</div>
+			                        </div>
+			                        <div><img src="../steam/header_292x136_alt_assets_152.jpg" alt="">
+			                            <div>$2.99</div>
+			                        </div>
+			                        <div><img src="../steam/header_292x136.jpg" alt="">
+			                            <div>$3.99</div>
+			                        </div>
+			                    </div>
+			                    <div class="Point">
+			                        <div></div>
+			                        <div></div>
+			                    </div>
+			                    <div class="leftArrow">
+			                        <div></div>
+			                    </div>
+			                    <div class="rightArrow">
+			                        <div></div>
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="updata">
+			                <div class="tittle">UPDATES & DISCOUNT</div>
+			                <div class="content">
+			                    <div class="left">
+			                        <img src="../steam/w.png" alt="">
+			                        <div class="price">Click for details</div>
+			                    </div>
+			                    <div class="right">
+			                        <div><img src="../steam/q.png" alt="">
+			                            <div class="price">
+			                                <div class="discount">
+			                                    <div></div>
+			                                    <div class="prices">
+			                                        <div></div>
+			                                        <div>$19.99</div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div><img src="../steam/e.png" alt="">
+			                            <div class="price">
+			                                <div class="discount">
+			                                    <div></div>
+			                                    <div class="prices">
+			                                        <div></div>
+			                                        <div>$12.99</div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div><img src="../steam/r.png" alt="">
+			                            <div class="price">
+			                                <div class="discount">
+			                                    <div>-20%</div>
+			                                    <div class="prices">
+			                                        <div>$39.99</div>
+			                                        <div>$32.99</div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div><img src="../steam/t.png" alt="">
+			                            <div class="price">
+			                                <div class="discount">
+			                                    <div>-20%</div>
+			                                    <div class="prices">
+			                                        <div>$9.99</div>
+			                                        <div>$7.99</div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div><img src="../steam/y.png" alt="">
+			                            <div class="price">
+			                                <div class="discount">
+			                                    <div>-25%</div>
+			                                    <div class="prices">
+			                                        <div>%6.99</div>
+			                                        <div>$5.25</div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                        <div><img src="../steam/u.png" alt="">
+			                            <div class="price">
+			                                <div class="discount">
+			                                    <div></div>
+			                                    <div class="prices">
+			                                        <div></div>
+			                                        <div>$24.99</div>
+			                                    </div>
+			                                </div>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+			<!-- Foot 页脚 -->
+			<!-- Footer -->
+			<!-- <div id="footer_spacer" style="" class="small_footer"></div> -->
+			<div id="footer" class="small_footer">
+				<div class="footer_content">
+			
+					<div class="rule"></div>
+					<div id="footer_logo_steam"><img
+							src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png"
+							alt="Valve Software" border="0" /></div>
+			
+					<div id="footer_logo"><a href="#" target="_blank" rel="noreferrer"><img
+								src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png"
+								alt="Valve Software" border="0" /></a></div>
+					<div id="footer_text">
+						<div>© 2024 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries.</div>
+						<div>VAT included in all prices where applicable. &nbsp;&nbsp;
+							<a href="#" target="_blank" rel="noreferrer">Privacy Policy</a>
+							&nbsp; | &nbsp;
+							<a href="#" target="_blank" rel="noreferrer">Legal</a>
+							&nbsp; | &nbsp;
+							<a href="#" target="_blank" rel="noreferrer">Steam Subscriber Agreement</a>
+							&nbsp; | &nbsp;
+							<a href="#" target="_blank" rel="noreferrer">Refunds</a>
+							&nbsp; | &nbsp;
+							<a href="#" target="_blank" rel="noreferrer">Cookies</a>
+						</div>
+						<div class="responsive_optin_link">
+							<div class="btn_medium btnv6_grey_black" onclick="Responsive_RequestMobileView()">
+								<span></span>
+							</div>
+						</div>
+			
+					</div>
+					<div style="clear: left;"></div>
+					<br>
+					<div class="rule"></div>
+					<div class="valve_links" data-panel="{&quot;flow-children&quot;:&quot;row&quot;}">
+						<a href="http://www.valvesoftware.com/about" target="_blank" rel="noreferrer">About Valve</a>
+						&nbsp; | &nbsp;<a href="http://www.valvesoftware.com" target="_blank" rel="noreferrer">Jobs</a>
+						&nbsp; | &nbsp;<a href="http://www.steampowered.com/steamworks/" target="_blank"
+							rel="noreferrer">Steamworks</a>
+						&nbsp; | &nbsp;<a href="https://partner.steamgames.com/steamdirect" target="_blank"
+							rel="noreferrer">Steam Distribution</a>
+						&nbsp; | &nbsp;<a href="https://help.steampowered.com/zh-cn/?snr=1_44_44_">Support</a>
+						&nbsp; | &nbsp;<a href="http://steam.lli5.cn/digitalgiftcards/?snr=1_44_44_" target="_blank"
+							rel="noreferrer">Gift Cards</a>
+						&nbsp; | &nbsp;<a href="https://steamcommunity.com/linkfilter/?url=http://www.facebook.com/Steam"
+							target="_blank" rel="noopener"><img
+								src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.gif"> Steam</a>
+						&nbsp; | &nbsp;<a href="http://twitter.com/steam" target="_blank" rel="noreferrer"><img
+								src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.gif"> @steam</a>
+					</div>
+				</div>
+			</div>
+	</body>
+
+	<script type="text/javascript">
+		
+		    // 轮播图1
+			var slid =document.getElementById('slider');
+			    var slidLis=slid.getElementsByTagName('ul')[0];
+			    // var slidLis=document.querySelector(".slider-list")
+			    var slidLi=slidLis.getElementsByTagName('li');
+			 
+			    var lef = document.getElementById('left');
+			    var righ = document.getElementById('right');
+			    
+			    var index = 0;
+			    function lun(){
+			       index++;
+			        circe();
+			       slidLis.style.left=index*-957 + "px";
+			       slidLis.style.transition="all 1s";
+			       if(index === 5){
+					   index= 0;
+			           setTimeout(function(){
+			               slidLis.style.left=0;
+			               slidLis.style.transition="none";
+			           },1000)
+			       }
+			       circe();
+			    }
+			    righ.addEventListener("click",lun);
+			    lef.addEventListener("click",function(){
+			        index--;
+			        if(index === -1){
+			            slidLis.style.left=5*-957 + "px";
+			            slidLis.style.transition="none";
+						 index = 4;
+			            setTimeout(function(){
+			                slidLis.style.left=index*-957 + "px";
+			            slidLis.style.transition="all 1s";
+			            },0);  
+			        }else{
+			            slidLis.style.left=index*-957 + "px";
+			        }
+			        circe();
+			    });
+			//  自动轮播
+			var autoplay = setInterval(lun,2000);
+			slid.addEventListener("mouseenter",function(){
+				clearInterval(autoplay);
+			});
+			slid.addEventListener("mouseleave",function(){
+				clearInterval;
+				autoplay = setInterval(lun,2000);
+			})
+			 
+			//小圆点
+			 
+			var dotList = document.getElementsByTagName('span');
+			function circe(){
+			    for(var i = 0;i < dotList.length;i++){
+			          if(i === index){
+			              dotList[i].classList.add("cur");
+			          }else{
+			            dotList[i].classList.remove("cur"); 
+			          }
+			    }
+			}
+			/* 语言下拉框固定悬浮 */
+				var state=true;
+				function show(){
+					if(state==true){
+						document.getElementById("language_dropdown").style.display="block";
+						state=!state;
+					}else if(state==false){
+						document.getElementById("language_dropdown").style.display="none";
+						state=!state;
+					}
+				}	
+			</script>
+</html>
